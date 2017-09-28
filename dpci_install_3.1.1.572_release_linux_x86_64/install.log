@@ -1,0 +1,206 @@
+Installer for DirectPCI SDK and Run-time v3.1.1.572_release_linux_x86_64
+Linux Installer v1.1.0.129_devel_linux_x86_64
+Installer started Sat Aug 12 17:51:32 2017
+
+INSTALLER ITEM#0
+ITEM STATUS: 0
+
+INSTALLER ITEM#1
+
+Advantech Innocore DirectPCI SDK and Driver installer.
+
+Drivers will be compiled and installed under /lib/modules/$KERNELVER/extra
+for the current running kernel only.  You may re-run the installer
+for any other kernel versions you want to use or you may now recompile
+the drivers from source.
+
+Installation paths (not configurable)
+Example source code:    /usr/src
+Header files:           /usr/include
+Libraries:              /usr/lib
+Documentation:          /usr/doc
+Command line utilities: /usr/bin
+
+ITEM STATUS: 0
+
+INSTALLER ITEM#2
+ITEM STATUS: 0
+
+INSTALLER ITEM#3
+uname(2):
+  release: 4.1.39-56-default
+  sysname: Linux
+  version: #1 SMP PREEMPT Mon May 1 04:41:25 UTC 2017 (5f49ec2)
+  machine: x86_64
+  nodename: linux-lipb
+ITEM STATUS: 0
+
+INSTALLER ITEM#4
+Detecting Advantech Innocore DirectPCI hardware:
+- no DirectPCI core I/O!
+- no Static RAM
+- no expansion ROM
+ITEM STATUS: 0
+
+INSTALLER ITEM#5: Installing libraries
+Extracting ./usr/lib to /tmp/.iglinstWUA2QF
+./usr/lib/
+./usr/lib/libdpci.so.3.1.1
+./usr/lib/install.sh
+./usr/lib/libdpci.so
+./usr/lib/libdpci.a
+./usr/lib/libdpcidebug.so.3.1.1
+./usr/lib/libdpcidebug.a
+./usr/lib/libdpcidebug.so
+++ dirname /tmp/.iglinstWUA2QF/./usr/lib/install.sh
++ SHD=/tmp/.iglinstWUA2QF/./usr/lib
++ cd /tmp/.iglinstWUA2QF/./usr/lib
++ echo test
+test
++ '[' linux_x86_64 = linux_x86_64 ']'
++ '[' -d /usr/lib64 ']'
++ cp -a libdpcidebug.so libdpcidebug.so.3.1.1 libdpci.so libdpci.so.3.1.1 /usr/lib64
++ ldconfig
+ITEM STATUS: 0
+
+INSTALLER ITEM#6: Installing utilities
+Extracting ./usr/bin to /
+./usr/bin/
+./usr/bin/ioboard
+./usr/bin/dpxname
+./usr/bin/pca9626
+./usr/bin/batt
+./usr/bin/memutil
+./usr/bin/idutil
+./usr/bin/dpci
+./usr/bin/i2cutil
+./usr/bin/dipsw
+ITEM STATUS: 0
+
+INSTALLER ITEM#7: Installing documentation
+Extracting ./usr/share/doc to /
+./usr/share/doc/
+./usr/share/doc/Innocore Gaming DirectPCI-3.1.1.572_release_linux_x86_64/
+./usr/share/doc/Innocore Gaming DirectPCI-3.1.1.572_release_linux_x86_64/EULA.txt
+./usr/share/doc/Innocore Gaming DirectPCI-3.1.1.572_release_linux_x86_64/200-332_3.1_5 DirectPCI SDK & Run-time PRM.pdf
+./usr/share/doc/Innocore Gaming DirectPCI-3.1.1.572_release_linux_x86_64/CHANGE_LOG.txt
+./usr/share/doc/Innocore Gaming DirectPCI-3.1.1.572_release_linux_x86_64/RELEASE_NOTES.txt
+ITEM STATUS: 0
+
+INSTALLER ITEM#8: Installing header files
+Extracting ./usr/include to /
+./usr/include/
+./usr/include/dpci_api_debug.h
+./usr/include/dpci_boards.h
+./usr/include/dpci_error.h
+./usr/include/dpci_bios_api.h
+./usr/include/dpci_version.h
+./usr/include/dpci_rom_api.h
+./usr/include/dpci_sram_api.h
+./usr/include/dpci_core_api.h
+./usr/include/dpci_api_decl.h
+./usr/include/dpci_api_types.h
+./usr/include/dpci_core_hw.h
+ITEM STATUS: 0
+
+INSTALLER ITEM#9: Installing source code
+Extracting ./usr/src to /
+./usr/src/
+./usr/src/InnocoreGaming/
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/script/
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/script/etc/
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/script/etc/init.d/
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/script/etc/init.d/dpci_drv.sh
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/script/etc/default/
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/script/etc/default/directpci
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/rom_demo.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/callback_demo.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/io_demo.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/dpci_core/
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/dpci_core/Makefile
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/batt_demo.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/bios_demo.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/dpci_rom/
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/dpci_rom/Makefile
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/i2c_demo.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/idlp_demo.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/dpci_serial/
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/dpci_serial/uart_test.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/dpci_serial/Makefile
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/eeprom_demo.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/dpci_sram/
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/dpci_sram/Makefile
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/Makefile
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/ts_demo.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/sram_demo.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/demo/idprom_demo.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/dpci_core_i2c.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/dpci_core_module.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/dpci_core_priv.h
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/dpci_core_digio.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/dpci_core_regintr.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/dpci_core_events.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/Makefile
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/dpci_core_ow.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/dpci_core_idlp.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_core/dpci_core_fileops.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_serial/
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_serial/dpci_serial.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_serial/Makefile
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem/
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem/dpci_mem_priv.h
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem/dpci_mem.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/dpci_mem/Makefile
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/include/
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/include/dpci_core_boards.h
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/include/dpci_core_types.h
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/include/dpci_core_priv2.h
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/include/linux/
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/include/linux/dpci_core_ioctl.h
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/include/linux/dpci_mem_ioctl.h
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/include/linux/dpci_multi.h
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/driver/Makefile
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/gpl.txt
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/api/
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/api/dpci_boards.c
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/include/
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/include/build.h
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/include/dpci_version.h
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/Makefile
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/build/
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/build/build.mk
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/build/getdepends.pl
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/build/rules-linux.mk
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/build/build-linux_i686.mk
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/build/build-linux_x86_64.mk
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/build/igl_version.h
+./usr/src/InnocoreGaming/DirectPCI-3.1.1.572_release_linux_x86_64/build/rules.mk
+ITEM STATUS: 0
+
+INSTALLER ITEM#10: Setting up driver boot scripts
+Not an Advantech Innocore DPX-series machine - skipping boot script installation.
+ITEM STATUS: 6
+
+INSTALLER ITEM#11
+ITEM STATUS: 0
+
+INSTALLER ITEM#12: Installing DirectPCI core I/O driver
+Item skipped - hardware not configuredITEM STATUS: 6
+
+INSTALLER ITEM#13
+ITEM STATUS: 0
+
+INSTALLER ITEM#14: Installing DirectPCI memory driver
+Item skipped - hardware not configuredITEM STATUS: 6
+
+INSTALLER ITEM#15
+ITEM STATUS: 0
+
+INSTALLER ITEM#16: Installing DirectPCI Serial I/O driver
+Item skipped - hardware not configuredITEM STATUS: 6
+
+INSTALLATION SUCCEEDED

@@ -1,0 +1,1 @@
+/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/CMakeFiles/serial_arduino_pc.dir

@@ -1,0 +1,8 @@
+/home/alvaro/flappyBird/FlappyBird-E135/cmakeFlappy-build/CMakeFiles/install.dir
+/home/alvaro/flappyBird/FlappyBird-E135/cmakeFlappy-build/CMakeFiles/list_install_components.dir
+/home/alvaro/flappyBird/FlappyBird-E135/cmakeFlappy-build/CMakeFiles/rebuild_cache.dir
+/home/alvaro/flappyBird/FlappyBird-E135/cmakeFlappy-build/CMakeFiles/smart-vending-flappy-bird.dir
+/home/alvaro/flappyBird/FlappyBird-E135/cmakeFlappy-build/CMakeFiles/install/local.dir
+/home/alvaro/flappyBird/FlappyBird-E135/cmakeFlappy-build/CMakeFiles/install/strip.dir
+/home/alvaro/flappyBird/FlappyBird-E135/cmakeFlappy-build/CMakeFiles/edit_cache.dir
+/home/alvaro/flappyBird/FlappyBird-E135/cmakeFlappy-build/CMakeFiles/smart-vending-flappy-bird_automoc.dir

@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+9163714d60d65503c8f0177bc5beb714 CMakeFiles/smart-vending-flappy-bird_automoc

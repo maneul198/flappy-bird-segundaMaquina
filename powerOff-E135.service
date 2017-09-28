@@ -1,0 +1,7 @@
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/powerOff-E135 &
+
+[Install]
+WantedBy=multi-user.target

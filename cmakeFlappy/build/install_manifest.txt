@@ -1,0 +1,1 @@
+/usr/local/bin/smart-vending-flappy-bird

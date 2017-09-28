@@ -1,0 +1,8 @@
+/home/cabitech/flappyBird/FlappyBird-E135/newDigitalioLib-build/CMakeFiles/edit_cache.dir
+/home/cabitech/flappyBird/FlappyBird-E135/newDigitalioLib-build/CMakeFiles/rebuild_cache.dir
+/home/cabitech/flappyBird/FlappyBird-E135/newDigitalioLib-build/CMakeFiles/list_install_components.dir
+/home/cabitech/flappyBird/FlappyBird-E135/newDigitalioLib-build/CMakeFiles/install.dir
+/home/cabitech/flappyBird/FlappyBird-E135/newDigitalioLib-build/CMakeFiles/install/local.dir
+/home/cabitech/flappyBird/FlappyBird-E135/newDigitalioLib-build/CMakeFiles/install/strip.dir
+/home/cabitech/flappyBird/FlappyBird-E135/newDigitalioLib-build/CMakeFiles/digitalio_dpx.dir
+/home/cabitech/flappyBird/FlappyBird-E135/newDigitalioLib-build/CMakeFiles/digitalio_dpx_automoc.dir

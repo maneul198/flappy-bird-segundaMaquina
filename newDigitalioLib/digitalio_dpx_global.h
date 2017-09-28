@@ -1,0 +1,13 @@
+#ifndef DIGITALIO_DPX_GLOBAL_H
+#define DIGITALIO_DPX_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(DIGITALIO_DPX_LIBRARY)
+    #define DIGITALIO_DPXSHARED_EXPORT Q_DECL_EXPORT
+#else
+    #define DIGITALIO_DPXSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // DIGITALIO_DPX_GLOBAL_H
+

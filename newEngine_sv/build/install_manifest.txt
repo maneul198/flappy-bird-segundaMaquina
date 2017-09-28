@@ -1,0 +1,3 @@
+/usr/local/lib/libenginesv.so
+/usr/local/include/enginesv_global.h
+/usr/local/include/enginesv.h

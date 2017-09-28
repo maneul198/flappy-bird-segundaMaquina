@@ -1,0 +1,2 @@
+/home/cabitech/flappyBird/FlappyBird-E135/newEngine_sv-build/CMakeFiles/enginesv_automoc.dir
+/home/cabitech/flappyBird/FlappyBird-E135/newEngine_sv-build/CMakeFiles/enginesv.dir

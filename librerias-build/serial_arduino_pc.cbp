@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="serial_arduino_pc" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/cabitech/flappyBird/FlappyBird-E135/librerias-build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/home/cabitech/flappyBird/FlappyBird-E135/librerias-build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/cabitech/flappyBird/FlappyBird-E135/librerias-build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="serial_arduino_pc">
+         <Option output="/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/libserial_arduino_pc.so" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/cabitech/flappyBird/FlappyBird-E135/librerias-build" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/c++/4.8/x86_64-suse-linux" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../x86_64-suse-linux/include" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.8/include" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/Makefile&quot;  VERBOSE=1 serial_arduino_pc" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="serial_arduino_pc/fast">
+         <Option output="/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/libserial_arduino_pc.so" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/cabitech/flappyBird/FlappyBird-E135/librerias-build" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/c++/4.8/x86_64-suse-linux" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.8/../../../../x86_64-suse-linux/include" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.8/include" />
+            <Add directory="/usr/lib64/gcc/x86_64-suse-linux/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/Makefile&quot;  VERBOSE=1 serial_arduino_pc/fast" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/home/cabitech/flappyBird/FlappyBird-E135/librerias-build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/cabitech/flappyBird/FlappyBird-E135/librerias/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

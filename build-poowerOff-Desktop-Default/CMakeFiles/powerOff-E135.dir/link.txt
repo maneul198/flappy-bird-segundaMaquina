@@ -1,0 +1,1 @@
+/usr/bin/g++   -g   CMakeFiles/powerOff-E135.dir/main.cpp.o CMakeFiles/powerOff-E135.dir/key.cpp.o CMakeFiles/powerOff-E135.dir/powerOff-E135_automoc.cpp.o  -o powerOff-E135 -Wl,-rpath,/usr/local/lib: -rdynamic /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.7.1 /usr/local/lib/libdigitalio_dpx.so -ldpci 

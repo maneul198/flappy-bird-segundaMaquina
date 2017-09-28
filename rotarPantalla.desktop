@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=rotarPantalla
+Exec=xrandr -o 1
+Type=Application

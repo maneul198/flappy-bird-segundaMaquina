@@ -1,0 +1,8 @@
+/home/smart/paqueteFlappyBird/powerOff/build/CMakeFiles/install/strip.dir
+/home/smart/paqueteFlappyBird/powerOff/build/CMakeFiles/install/local.dir
+/home/smart/paqueteFlappyBird/powerOff/build/CMakeFiles/powerOff-E135.dir
+/home/smart/paqueteFlappyBird/powerOff/build/CMakeFiles/edit_cache.dir
+/home/smart/paqueteFlappyBird/powerOff/build/CMakeFiles/rebuild_cache.dir
+/home/smart/paqueteFlappyBird/powerOff/build/CMakeFiles/install.dir
+/home/smart/paqueteFlappyBird/powerOff/build/CMakeFiles/list_install_components.dir
+/home/smart/paqueteFlappyBird/powerOff/build/CMakeFiles/powerOff-E135_automoc.dir

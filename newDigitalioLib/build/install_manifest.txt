@@ -1,0 +1,6 @@
+/usr/local/lib/libdigitalio_dpx.so
+/usr/local/include/digitalinput.h
+/usr/local/include/digitalio_dpx_global.h
+/usr/local/include/digitaloutput.h
+/usr/local/include/digital_ports.h
+/usr/local/include/watchioports.h

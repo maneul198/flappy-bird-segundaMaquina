@@ -1,0 +1,2 @@
+/home/cabitech/flappyBird/FlappyBird-E135/newDigitalioLib/build/CMakeFiles/digitalio_dpx_automoc.dir
+/home/cabitech/flappyBird/FlappyBird-E135/newDigitalioLib/build/CMakeFiles/digitalio_dpx.dir

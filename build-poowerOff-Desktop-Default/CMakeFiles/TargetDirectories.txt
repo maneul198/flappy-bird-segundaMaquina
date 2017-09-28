@@ -1,0 +1,8 @@
+/home/smart/paqueteFlappyBird/build-poowerOff-Desktop-Default/CMakeFiles/install/strip.dir
+/home/smart/paqueteFlappyBird/build-poowerOff-Desktop-Default/CMakeFiles/install/local.dir
+/home/smart/paqueteFlappyBird/build-poowerOff-Desktop-Default/CMakeFiles/powerOff-E135.dir
+/home/smart/paqueteFlappyBird/build-poowerOff-Desktop-Default/CMakeFiles/edit_cache.dir
+/home/smart/paqueteFlappyBird/build-poowerOff-Desktop-Default/CMakeFiles/rebuild_cache.dir
+/home/smart/paqueteFlappyBird/build-poowerOff-Desktop-Default/CMakeFiles/install.dir
+/home/smart/paqueteFlappyBird/build-poowerOff-Desktop-Default/CMakeFiles/list_install_components.dir
+/home/smart/paqueteFlappyBird/build-poowerOff-Desktop-Default/CMakeFiles/powerOff-E135_automoc.dir

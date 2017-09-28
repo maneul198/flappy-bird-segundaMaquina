@@ -1,0 +1,188 @@
+#!/bin/bash
+#
+# $Id: dpxname 12081 2015-11-09 12:53:15Z aidan $
+# Copyright 2005-2012, Advantech Co Ltd.  All Rights Reserved.
+#
+
+bflag=
+gflag=
+
+while [ "$1" ]; do
+	case "$1" in
+	-v)
+		echo "$0: version 3.1.1.572_release_linux_x86_64 "'$Revision: 12081 $'
+		exit 0
+		;;
+	-b)	bflag=1
+		;;
+	-g)	gflag=1
+		;;
+	*)	echo "usage: $0 [-b] [-g] [-v]" >&2
+		exit 255;
+	esac
+	shift
+done
+
+if [ -z "$bflag" -a -z "$gflag" ]; then
+	bflag=1
+	gflag=1
+fi
+
+if [ ! -f /proc/bus/pci/devices -o -z `which lspci` ]; then
+	echo "No PCI support available" >&2
+	exit 1
+fi
+
+LSPCIOUT=/tmp/`basename $0`.$$
+
+lspci -nn >$LSPCIOUT
+
+# Work out which host-bridge chipset is in use to find out the board type.
+#
+need_space=
+if [ "$bflag" ]; then
+	if [ "$need_space" ]; then
+		echo -n " ";
+	fi
+	hostbridge=`lspci -n | sed "s/Class //" | grep ' 0600: ' | cut -f3 -d\  | head -1`
+	DPCI_ver=`grep "\[0880\]: .*\[16cd:....\] " $LSPCIOUT | grep -v "010[1234]" | sed "s/.*\[16cd:\(....\)\].*/\\1/"`
+	# DPX-E115 is detected twice for the sake of E105 support board-based
+	# testing.  Will be removed later.
+	#
+	case "$DPCI_ver" in
+	0180)
+                # Is an Exar xr17v358 present on the board?
+                spchip=`lspci -n | grep '13a8:' | cut -f3 -d\ `
+
+		if [ `expr $hostbridge : "8086:0c00"` -ge 1 ]; then
+                	if [ "$spchip" = 13a8:0358 ]; then
+                        	echo -n "dpx_s435";
+			else
+                        	echo -n "dac_bj08";
+                	fi
+		elif [ `expr $hostbridge : "1022:1566"` -ge 1 ]; then
+                        echo -n "dpx_e135";
+		elif [ `expr $hostbridge : "1022:1576"` -ge 1 ]; then
+                        echo -n "dpx_s440";
+		else
+			echo -n "unknown"
+		fi
+                ;;
+
+	010b)
+		if [ $hostbridge = 8086:2a10 ]; then
+			echo -n "dpx_s410"
+		elif [ `expr $hostbridge : "8086:006a"` -ge 1 ]; then
+			echo -n "dpx_s425"
+		elif [ `expr $hostbridge : "8086:0044"` -ge 1 ]; then
+			echo -n "dpx_s425"
+		elif [ `expr $hostbridge : "8086:.*"` -ge 1 ]; then
+			echo -n "dpx_s305"
+		elif [ `expr $hostbridge : "1022:9600"` -ge 1 ]; then
+			echo -n "dpx_e115"
+		elif [ $hostbridge = "1022:1510" ]; then	
+			echo -n "dpx_e130"
+		elif [ `expr $hostbridge : "1022:9601"` -ge 1 ]; then
+			echo -n "dpx_s415s420"
+		elif [ `expr $hostbridge : "1022:1410"` -ge 1 ]; then
+			if [ "`idutil -f | grep ' (0.128)'`" ]; then
+				echo -n "dpx_c710"
+			else
+				echo -n "dpx_s430"
+			fi
+		else
+			echo -n "unknown"
+		fi
+		;;
+	010a)
+		if [ $hostbridge = 1022:1510 ]; then	
+			echo -n "dpx_e120";
+		elif [ $hostbridge = 8086:27ac ]; then
+			echo -n "dpx_e105";
+		elif [ `expr $hostbridge : "8086:.*"` -ge 1 ]; then
+			echo -n "dpx_c705c605";
+		else
+			echo -n "unknown"
+		fi
+		;;
+	0109)
+		echo -n "dpx112";
+		;;
+	0108)
+		echo -n "dpx117";
+		;;
+	0107)
+		echo -n "dpx116u";
+		;;
+	0106)
+		echo -n "dpx116";
+		;;
+	0105)
+		ALi_chipset=`grep M1533 $LSPCIOUT`
+		if grep M1533 $LSPCIOUT >/dev/null; then
+			echo -n "dpx114"
+		else
+			SiS_chipset=`grep "Host bridge.*SiS.*661" $LSPCIOUT`
+			if [ "$SiS_chipset" ]; then
+				echo -n "dpx115"
+			else
+				echo "Not a Innocore DPX-series board" >&2
+				rm -f $LSPCIOUT
+				exit 1;
+			fi
+		fi
+		;;
+	*)
+		echo "Unknown Innocore DPX-series board" >&2
+		rm -f $LSPCIOUT
+		exit 1;
+		;;
+	esac
+	need_space=1
+fi
+
+# Work out which GPU chipset is in use.
+#
+if [ "$gflag" ]; then
+	if [ "$need_space" ]; then
+		echo -n " ";
+	fi
+	ATI_gpu="`grep \"ATI Technologies\" $LSPCIOUT | sed 's/ /_/g'`"
+	case "$ATI_gpu" in
+	*Mobility_M6*)
+		echo -n "ATI_M6"
+		;;
+	*Mobility_M7*)
+		echo -n "ATI_M7"
+		;;
+	*Mobility_9000_M9*)
+		echo -n "ATI_M9"
+		;;
+	*Mobility_9600_M10*)
+		echo -n "ATI_M10"
+		;;
+	*Mobility_M11*)
+		echo -n "ATI_M11"
+		;;
+	*)
+		Intel_gpu=`grep "Intel.*Graphics" $LSPCIOUT`
+		if [ "$Intel_gpu" ]; then
+			echo -n "IEG"
+		else
+			SiS_gpu=`grep "VGA compat.*SiS.*661" $LSPCIOUT`
+			if [ "$SiS_gpu" ]; then
+				echo -n "SiS "
+			else
+				echo -n "unknown_GPU"
+			fi
+		fi
+		;;
+	esac
+	need_space=1
+fi
+
+# Echo final new line and skidadl.
+#
+rm -f $LSPCIOUT
+echo
+exit 0

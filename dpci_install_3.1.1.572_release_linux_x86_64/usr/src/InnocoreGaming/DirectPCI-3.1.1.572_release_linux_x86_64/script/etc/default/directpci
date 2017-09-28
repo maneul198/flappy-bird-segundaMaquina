@@ -1,0 +1,56 @@
+###############################################################################
+#
+# $Id: default-directpci 5335 2009-07-22 13:45:19Z mithu $
+#
+# Copyright 2006-2008 Innocore Gaming Limited.
+# All rights reserved.
+#
+# Description:
+# Default settings for various DirectPCI @VERSION_SHORT@ related boot options.
+#
+###############################################################################
+
+# Set this to anything else if you don't want the IDLP time updated from the
+# CMOS RTC on booting.
+#
+SYNC_IDLP_DATE=no
+
+# This is the ttyS number of the first port that the dpci_serial driver will
+# use.  All ports from this number onward have their port address, type and
+# irq number cleared using setserial(8). Note that if your distribution doesn't
+# find COM3/COM4 ports at traditional 3e8 and 2e8 then the dpci serial ports
+# might appears starting from ttyS2 not ttyS4.
+#
+DPCI_SERIAL_FIRST_PORT=4
+
+# Default dpci debug level.  This is automatically set during boot if it is not
+# blank.  Note that the same effect can be had using modules.conf (or whatever
+# it's called on your system).
+#
+DPCI_DEBUG_LEVEL=
+
+################
+#
+# Uncomment and set to "yes" if you want the watchdogs to be started
+# automatically.
+#
+# WARNING: You really should not do this in deployment for either watch-dog.
+# Hence, these are disabled by default.
+#
+################
+
+# DEBUG_IO_WATCHDOG: this is the I/O watchdog which stops the outputs being
+# reset.
+#
+#DEBUG_IO_WATCHDOG=yes
+
+# DEBUG_IDLP_WATCHDOG: this is the IDLP watchdog which stops the whole system
+# being reset.
+#
+#DEBUG_IDLP_WATCHDOG=yes
+
+# DEBUG_IDLP_WATCHDOG_TMOUT_SECS: this is how long the IDLP waits for a pat
+# before resseting the system.  This has no effect unless DEBUG_IDLP_WATCHDOG
+# is "yes"
+#
+DEBUG_IDLP_WATCHDOG_TMOUT_SECS=5

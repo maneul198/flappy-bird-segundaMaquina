@@ -1,0 +1,156 @@
+Change-log for DirectPCI SDK & Run-time v3.1.1
+-------------------------------------------------------------------------------
+
+NOTES:
+1. Only successful builds for the target platform are listed here.
+2. Changes listed may not fully apply to this build of the product   
+3. This content is private and disclosure is covered under your NDA with
+   Advantech Innocore.
+
+No changes in 3.1.1.572_release_linux_x86_64 (built 2017/03/04 at 04:08:12)
+
+Changes integrated in 3.1.1.290_release_linux_x86_64 (built 2016/05/14 at 04:02:32) 
+   Bug 898: memutil -C prints out incorrect address when memory compare fails 
+
+Changes integrated in 3.1.1.255_release_linux_x86_64 (built 2016/03/26 at 04:01:55) 
+   Bug 892: batt utility prints nothing when using "batt name" option
+
+Changes integrated in 3.1.1.240_release_linux_x86_64 (built 2016/03/12 at 03:50:49) 
+   Feature: Improve error messages when dpci is not available
+
+Changes integrated in 3.1.1.230_release_linux_x86_64 (built 2016/02/27 at 04:02:19) 
+   Feature: Improve error messages when dpci is not available
+
+ Changes integrated in 3.1.1.206_release_linux_x86_64 (built 2016/02/06 at 03:51:07)
+   Bug 889: EEPROM Clear check the correct size
+   Bug 890: IDPROM option 2 does not prompt for input
+
+Changes integrated in 3.1.1.156_release_linux_x86_64 (built 2016/01/16 at 03:35:24) 
+   Bug 888: Add bios demo menu
+
+Changes integrated in 3.1.1.112_release_linux_x86_64 (built 2015/12/05 at 04:14:45) 
+   Bug 882: dpci_idprom_readid() fails but errno=0
+   Feature: API function dpci_idprom_size() and dpci_idprom_write8()
+
+Changes integrated in 3.1.1.107_release_linux_x86_64 (built 2015/11/28 at 04:20:44) 
+   Bug 880: Installer attempts to install dpci_serial driver when not needed 
+
+Changes integrated in 3.1.1.90_release_linux_x86_64 (built 2015/11/14 at 04:19:29) 
+   Bug 874: Strange error on getting level of non-existant battery
+
+Changes integrated in 3.1.1.57_release_linux_x86_64 (built 2015/10/17 at 04:15:30) 
+   Feature: Demos should report build version numbers in menu
+
+Features and fixes from previous releases:
+
+ Changes integrated in v3.1.0.
+   Bug 203: DPCI dpci_serial driver fails as not enough com ports configured
+   Bug 305: common code unification and quality improvements Part 1
+   Bug 305: common code unification and quality improvements Part 2
+   Bug 305: common code unification and quality improvements Part 5
+   Bug 314: watch dog timeout value may be overwritten when setting IO and IDLP watch dogs
+   Bug 317: dpci_io_wait_int no Linux implementation
+   Bug 319: dpci_io_wait_port() does not work after using dpci_io_wait_iport()
+   Bug 319: event steaming without automatic edge reconfiguration does not work correctly 
+   Bug 320: Manual 200-332 not included in distribution
+   Bug 321: dpci_i2c_{read,write}() modify input parameter members
+   Bug 323: system hangs when registering/unregistering callbacks multiple times
+   Bug 323: system hangs when registering/unregistering callbacks multiple times - fix callback list add/remove, fix thread termination 
+   Bug 332: Event queue exhaustion when event streaming to sub-threads
+   Bug 333: digital input changes could be missed if they happen in very quick succession
+   Bug 334: memutil reads/writes files in text mode, mode changed to binary
+   Bug 335: dpxname utility wrongly recognises DPX-S425 as DPX-S305
+   Bug 336: can't install DirectPCI - installer is corrupt.
+   Bug 337: can't build dpci drivers on kernels 2.6.36 or newer
+   Bug 338: Installer is bigger than need be - contains unneeded driver binaries
+   Bug 343: dpci_mem will not install on kernel 2.6.24
+   Bug 347: OneWire program-pulses don't always work
+   Bug 348: Quiet mode needs to be disabled explicitly before com ports visible
+   Bug 353: sometimes API does not end debouncing after debounce timeout period
+   Bug 373: Linux installer for DPCI 3.1.0 skips serial driver installation on E105
+   Bug 376: idlpcmd utility usage message displays "idutil" instead of "idlpcmd"
+   Bug 403: 'batt -c' reports segmentation fault
+   Bug 412: dpci_e2_read/write() offset validation broken
+   Bug 419: Memory leak in i2c command processing
+   Bug 420: SRAM performance is slower on DPCI v3.0 than v2.0
+   Bug 441: power failure detection may generate unwanted interrupts
+   Bug 451: temperature sensor interrupt handling broken
+   Bug 461: Event list corruption on generating large no. of interrupts
+   Bug 462: Reorganize boards array to use one-entry for each DPX-board
+   Bug 464: dpci_{i2c|e2}_{read|write}8 methods not fully compliant with manual
+   Bug 507: dpci_core driver waits too long for broken IDLP to respond
+   Bug 545: Battery count incorrect for CPLD f/w v71 boards
+   Bug 562: Odd result from idutil -f when bit 7 or IDLP_VERSION_CONF2 is set
+   Bug 576: dpxname cannot detect DPX-S430
+   Bug 577: Race condition in Callback API initialisation
+   Bug 614: Linux installer build failures due to OOM on virtual hosts
+   Bug 619: dpci -b should report when I/O board is not supported 
+   Bug 624: Bit errors seen when calling dpci_idprom_readid()
+   Bug 630: Kernel Oops on memutil -x sram
+   Bug 638: Linux version 3.6 removes use of IRQF_SAMPLE_RANDOM
+   Bug 642: POSIX semantics of dpci_rom_read() broken when byte-count == 0
+   Bug 649: ROM device initially disabled under certain Linux versions
+   Bug 683: Linux driver build complains of "getdepends.pl" not found 
+   Bug 689: Wrong battery count in for DPX-E130
+   Bug 690: ROM device appears when disabled; access slows system critically
+   Bug 704: SRAM demo writes extra byte 
+   Bug 746: Can't read intrusion status if input pattern at IDLP is 0xCE or 0xEE 
+   Bug 747: dpci_ev_close_stream() doesn't always succeed
+   Bug 750: idprom_demo read bytes does not display values read 
+   Bug 751: bios_demo enhancements 
+   Bug 752: batt_demo shows status OK even if battery does not exist
+   Bug 754: ROM incorrectly appearing as 2MB in size
+   Bug 754: ROM incorrectly appearing as 2MB in size 
+   Bug 762: idlp_demo cannot read old events
+   Bug 765: Installer does not correctly recognise DPCIe variant
+   Bug 767: idutil -L can show an I/O error if an event is logged during use.
+   Bug 769: S435 SRAM size does not always reflect jumper settings
+   Bug 788: dpxname accounts for recognise upgraded IDLP f/w on S430/C710 
+   Bug 790: 3.0.x APIs missing in 3.1.x
+   Bug 794: Replace use of __TIME__/__DATE__ in Linux drivers
+   Bug 794: Replace use of __TIME__/__DATE__ in Linux drivers 
+   Bug 797: dpxname says S435 is "PCIE_DEVEL"
+   Bug 800: Many remaining references to Innocore Gaming 
+   Bug 805: dpci_serial does not compile due to serial8250_register_port() disappearing 
+   Bug 816: memutil/bios_demo BIOS size is wrong for DPX-S435/DAC-BJ08 
+   Bug 821: dpci_e2_size() does not return 0 when eeprom is missing.
+   Bug 837: Some i2c_demo options don't display i2c API error codes
+   Bug 846: BSoD dumping bios with bios_dump on DPX-S435
+   Bug 847: Installer does not compile drivers on kernels 4.x
+   Bug 850: Libraries installed in wrong folder on 64-bit system
+   Bug 95: OE# bit in register 0x1F does not clear on setting quiet mode off
+   Feature: API to support DPX-E130 back-up power supply (BPS) hardware
+   Feature: better method to allow customers to build drivers on own systems
+   Feature: dpci_core driver warns when debug level is set for non-debug driver
+   Feature: dpci option to show DIP-switch settings
+   Feature: dpci option to show IDPROM ID
+   Feature: Event Code added for IDLP self-checksum failure 
+   Feature: Improvements to i2c_demo
+   Feature: memutil option to report size of memory type
+   Feature: memutil provides access to system BIOS
+   Feature: option to scan i2c bus in i2c_demo.c
+   Feature: performance improvement for memutil -x/-r
+   Feature: recognition of updated PCI device descriptions in pci.ids
+   Feature: Support DAC-BJ08 board
+   Feature: Support DAC-BJ08 board.
+   Feature: support for choosing which events to monitor with -E option 
+   Feature: support for DPX-C710
+   Feature: support for DPX-E120
+   Feature: support for DPX-E130
+   Feature: support for DPX-S430 
+   Feature: Support for DS28CM00 Serial Number chip on DPX-C710
+   Feature: support for Intrus#6 and #7
+   Feature: support for kernels with CONFIG_RT enabled
+   Feature: Support for Linux v3.x series kernels
+   Feature: Support for PCIe Gaming I/O variant
+   Feature: support for systems without IDLP.
+   Feature: Support Linux kernel v3.16
+   Feature: Support Linux kernel v4.1
+   Feature: support long IDLP f/w version numbers in idlp_demo
+   Feature: Updates to batt and batt_demo to reflect changes in IDLP f/w v60
+   Feature: write access to IDPROM from memutil.
+   Feature: write access to IDPROM in API
+
+******************************  END  OF  LOG  ****************************
+Generated by autobuild on Sat Mar  4 04:08:28 GMT 2017
+

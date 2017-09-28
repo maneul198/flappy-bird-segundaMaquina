@@ -1,0 +1,8 @@
+/home/smart/paqueteFlappyBird/build-cmakeFlappy-Desktop-Default/CMakeFiles/install/strip.dir
+/home/smart/paqueteFlappyBird/build-cmakeFlappy-Desktop-Default/CMakeFiles/install/local.dir
+/home/smart/paqueteFlappyBird/build-cmakeFlappy-Desktop-Default/CMakeFiles/smart-vending-flappy-bird.dir
+/home/smart/paqueteFlappyBird/build-cmakeFlappy-Desktop-Default/CMakeFiles/rebuild_cache.dir
+/home/smart/paqueteFlappyBird/build-cmakeFlappy-Desktop-Default/CMakeFiles/edit_cache.dir
+/home/smart/paqueteFlappyBird/build-cmakeFlappy-Desktop-Default/CMakeFiles/install.dir
+/home/smart/paqueteFlappyBird/build-cmakeFlappy-Desktop-Default/CMakeFiles/list_install_components.dir
+/home/smart/paqueteFlappyBird/build-cmakeFlappy-Desktop-Default/CMakeFiles/smart-vending-flappy-bird_automoc.dir

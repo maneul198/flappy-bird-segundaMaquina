@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=flappy
+Exec=smart-vending-flappy-bird
+Type=Application
+Hidden=false
+NoDisplay=false

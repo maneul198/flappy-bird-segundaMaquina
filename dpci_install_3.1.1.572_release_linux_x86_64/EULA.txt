@@ -1,0 +1,101 @@
+                   Innocore Gaming Ltd. End User License Agreement
+                             For Software Development and Run-time
+
+Version 1.0c
+
+TERMS:
+THE  SOFTWARE: The licensed materials - any files presented  in  a
+single  archive  file  with this EULA document  ("  the  EULA  "),
+including but not limited to computer programs, libraries  (static
+or  dynamic  linking),  written documents and  diagrams,  computer
+program source code and files required to render said source  code
+into executable files.]
+The COMPANY: Innocore Gaming Ltd. or its suppliers.
+
+1. SUMMARY
+This is a legal agreement between you (either an individual or  an
+entity)  and  Innocore  Gaming Ltd.  By  installing  the  software
+presented  you  are  agreeing to be bound by  the  terms  of  this
+Agreement.   If  you do not agree to the terms of this  Agreement,
+promptly   return   the  unopened  software  packet(s)   and   the
+accompanying  items (including written materials  and  binders  or
+other containers) to the place from which you obtained them for  a
+full refund.
+
+2. COPYRIGHT
+The  SOFTWARE  is  owned wholly or partly by The  COMPANY  and  is
+protected  by  United  Kingdom copyright  laws  and  international
+treaty provisions and all other applicable national laws.
+
+3. GRANT OF LICENSE (SDK)
+The  COMPANY grants to you the right to use the SOFTWARE on target
+computers  in  your  control for the purposes  of  development  of
+software.   You  may not transfer the licensed materials  (whether
+software or documentation) to another person not in your immediate
+organization.  These restrictions apply regardless of  the  medium
+on which the SOFTWARE was obtained or the source of the medium.
+
+4. GRANT OF LICENSE (Run-time)
+The  COMPANY grants you the right to use the enclosed the SOFTWARE
+on   target  computers  in  your  control.   Furthermore  you  may
+distribute  to  your customers those files and  only  those  files
+required  for run-time operation of your software.  This  includes
+but is not limited to the following: your own binary programs when
+linked  with  libraries  supplied by the COMPANY;  shared  library
+files (dynamic link library) files; configuration files pertaining
+to  the  above; demonstration programs and utilities  programs  in
+executable form.  You may NOT distribute source code belong to the
+COMPANY.
+
+5. OTHER RESTRICTIONS
+You  may  not  sell the SOFTWARE or any part thereof  without  the
+prior written consent of the COMPANY.
+You must take all reasonable precautions to prevent the disclosure
+of the SOFTWARE.  You should not install the software on computers
+over which you have little or no control.
+Computer programs provided herewith that are not owned by Innocore
+Gaming Ltd. are the copyright of their respective owners and  must
+not be copied outside of the terms of this agreement.
+
+6. DISCLAIMER OF WARRANTIES
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, COMPANY AND ITS
+SUPPLIERS  PROVIDE TO YOU THE SOFTWARE, AND ANY (IF  ANY)  SUPPORT
+SERVICES  RELATED TO THE SOFTWARE ("SUPPORT SERVICES") AS  IS  AND
+WITH  ALL  FAULTS; and COMPANY and its suppliers  hereby  disclaim
+with  respect to THE SOFTWARE AND SUPPORT SERVICES all  warranties
+and  conditions, whether express, implied or statutory, including,
+but  not limited to, any (if any) warranties or conditions  of  OR
+RELATED TO: TITLE, NON-INFRINGEMENT, merchantability, fitness  for
+a particular purpose, lack of viruses, accuracy or completeness of
+responses,  results,  lack of negligence or  lack  of  workmanlike
+effort,  QUIET ENJOYMENT, QUIET POSSESSION, AND CORRESPONDENCE  TO
+DESCRIPTION. The entire risk arising out of use or performance  of
+the SOFTWARE AND ANY SUPPORT SERVICES remains with you.
+
+7. EXCLUSION OF INCIDENTAL, CONSEQUENTIAL AND CERTAIN OTHER
+DAMAGES.
+To  the  maximum extent permitted by applicable law, in  no  event
+shall  COMPANY  or  its  suppliers  be  liable  for  any  special,
+incidental,   indirect,   or  consequential   damages   whatsoever
+(including, but not limited to, damages for: loss of profits, LOSS
+OF  confidential  or  other  information,  business  interruption,
+personal  injury,  loss  of  privacy, failure  to  meet  any  duty
+(including  of good faith or of reasonable care), negligence,  and
+any other pecuniary or other loss whatsoever) arising out of or in
+any way related to the use of or inability to use the SOFTWARE  OR
+THE  SUPPORT SERVICES, OR the provision of or failure  to  provide
+Support  Services,  or otherwise under or in connection  with  any
+provision  of  this  Supplemental EULA, even  if  COMPANY  or  any
+supplier has been advised of the possibility of such damages.
+
+8. LIMITATION OF LIABILITY AND REMEDIES
+NOTWITHSTANDING ANY DAMAGES THAT YOU MIGHT INCUR  FOR  ANY  REASON
+WHATSOEVER  (INCLUDING, WITHOUT LIMITATION, ALL DAMAGES REFERENCED
+ABOVE AND ALL DIRECT OR GENERAL DAMAGES), THE ENTIRE LIABILITY  OF
+THE  COMPANY AND ANY OF ITS SUPPLIERS UNDER ANY PROVISION OF  THIS
+SUPPLEMENTAL  EULA  AND  YOUR EXCLUSIVE  REMEDY  FOR  ALL  OF  THE
+FOREGOING  SHALL BE LIMITED TO THE GREATER OF THE AMOUNT  ACTUALLY
+PAID   BY  YOU  FOR  THE  SOFTWARE  OR  U.S.$5.00.  THE  FOREGOING
+LIMITATIONS, EXCLUSIONS AND DISCLAIMERS SHALL APPLY TO THE MAXIMUM
+EXTENT  PERMITTED BY APPLICABLE LAW, EVEN IF ANY REMEDY FAILS  ITS
+ESSENTIAL PURPOSE.

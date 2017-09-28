@@ -1,0 +1,6 @@
+/usr/local/lib/libID003_LIB_V3.so
+/usr/local/include/id003_lib_v3.h
+/usr/local/include/id003_lib_v3_global.h
+/usr/local/include/Idcomm.h
+/usr/local/include/IDcomand.h
+/usr/local/include/KbiredUtilities.h

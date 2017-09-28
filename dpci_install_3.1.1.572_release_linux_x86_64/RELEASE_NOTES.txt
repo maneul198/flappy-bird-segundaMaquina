@@ -1,0 +1,130 @@
+RELEASE NOTES
+DirectPCI SDK and Run-time v3.1.1.572_release_linux_x86_64
+-------------------------------------------------------------------------------
+$Id: RELEASE_NOTES.txt 11757 2015-07-01 22:24:38Z aidan $
+(C)Copyright 2004-2015, Advantech Co. Ltd.
+
+PLEASE read these release notes before proceeding with the installation of the
+DirectPCI SDK & Run-time.   
+
+The file CHANGE_LOG lists changes integrated into this release.
+
+
+LICENSE
+-------
+
+Except as noted below, all items are covered under the terms of the Innocore
+Gaming NDA.
+
+Linux Drivers and API examples are covered by the GNU Public License.
+
+If these license terms are not acceptable to you, please exit the installer.
+
+
+SUPPORT
+-------
+If you have problems then you may e-mail Advantech Innocore for support at this
+address:
+
+	support@advantech-innocore.com
+
+Please send information regarding your problem, including any log files, by
+e-mail together with additional details about the board type, BIOS revision,
+DPCI-revision (lspci -v output) and operating system name and version to the
+e-mail address above.
+
+
+INSTALLATION
+------------
+1.  Serial port configuration
+
+The DirectPCI SDK & Run-time package includes a driver called dpci_serial.
+This is only required for the DPX-E120, DPX-E105 and DPX-C705.  All DPX-S
+series boards and other DPX-E and DPX-C series boards have multi-port serial
+chips which require separate software support available from our knowledge-base
+website at http://www.advantech-innocore.com/support/.
+
+Some Linux distirbutions have their kernels configured with a small default
+number of serial ports, which is certainly insufficient whichever DPX-series
+mainboard you are using.  In many cases it is sufficient to add the following
+configuraiton settings in modules.conf or in grub.conf.
+
+	 8250.nr_uarts=12 8250.share_irq=1
+
+If these setting are not effective using modules.conf or grub.conf then you
+will need to reconfigure your kernel.  You will need to set the parameter
+CONFIG_SERIAL_8250_NR_UARTS to 8 (for the 80-1003 board) or 12 (for the 80-0062 board) for kernels with the 8250 driver built in.
+
+You should consider setting this up first before running the dpci installer as
+the installer may appear to fail installing the dpci_serial driver, although it
+actually has succeeded and the install continues.
+
+
+2.  Installation on Older Ubuntu Distributions
+
+For such versions older then 10.04, we strongly suggest you upgrade to 10.04 or a newer release.
+
+For versions older than 8.04.4, please contact us.  You will require a glib
+v2.3-compatible build which may require additional engineering work and thus an
+engineering charge.
+
+Under Ubuntu 5.10, the Kernel Makefile in /lib/modules/2.6.12-9-386/build is
+missing a suitable setting for EXTRAVERSION; this means that when DirectPCI is
+installed, the kernel modules are built and installed incorrectly and so do not
+load.  You must modify this so that EXTRAVERSION is set to -9-386 thus:
+
+   PATCHLEVEL = 6
+   SUBLEVEL = 12
+-> EXTRAVERSION = -9-386
+   NAME=Woozy Numbat
+
+If you have updated to the 2.6.12-10-386 kernel then use the setting -10-386.
+
+Under Ubuntu, you must also have the following packages installed:
+
+* setserial -  so serial ports are installed with correct device numbers.
+* linux-headers package for the version of the kernel you're using; if these
+  are not available then it will not be possible to install the drivers.
+* gcc and make - you will need these and other development tools installed.
+
+Under Ubuntu 7.10, a similar problem occurs because although the kernel version
+named 2.6.22-14-generic, the build makefile says 2.6.22.9.  As such, the DPCI
+driver installation will fail because the new module could not be loaded.
+However, the modules do compile and load.  To fix this run the following command
+as superuser (root) after installation:
+
+   # cd /lib/modules/2.6.22.9
+   # mv extra ../2.6.22-14-generic
+
+3. Digital Input Ports and Interrupts
+
+The interrupts caused by Input port 0 on the 80-1003 I/O board, digital input
+port 0 on the DPX-116U, and all input ports on the 80-0062 I/O board II and the
+DXP-112, are relayed as input on /dev/input/eventX, where X is an integer,
+normally 1 or 2, depending upon whether a pointing device is also installed.
+Your kernel must have the event logging system enabled (CONFIG_INPUT_EVDEV is
+set to 'm' or 'y').  At boot time you will need to ensure that the evdev module
+is loaded if it has not been compiled into the kernel directly.
+
+The input device name "/dev/input/dpci" can be used (as expected by the
+dpci_test demo in /usr/local/src/denistron/demo/dpci_core) so that the device
+name remains the same even if additional input devices are installed. To do
+this modify the udev.rules file in /etc/udev/rules.d so that an additional
+line (prefixed '+') is placed for input devices thus.
+
+ # input devices
+ KERNEL="mice",          NAME="input/%k"
+ KERNEL="mouse*",        NAME="input/%k"
++KERNEL="event*", SYSFS{vendor}="0x16cd", NAME="input/%k", SYMLINK="input/dpci"
+ KERNEL="event*",        NAME="input/%k"
+ KERNEL="js*",           NAME="input/%k"
+ KERNEL="ts*",           NAME="input/%k"
+
+Some newer udev releases use the wildcard "event[0-9]*" instead of "event*" as shown above, they also use the == operator; in such cases use the extra line
+marked by '+' below:
+
+ KERNEL=="mouse*",        NAME="input/%k"
++KERNEL=="event*", SYSFS{vendor}=="0x16cd", NAME="input/%k", SYMLINK="input/dpci"
+ KERNEL=="event*",        NAME="input/%k"
+
+
